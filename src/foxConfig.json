@@ -1,0 +1,112 @@
+{
+    "foxes":[
+        {
+            "id":1,
+            "name":"Morty",
+            "race":"Vulpes vulpes",
+            "nature":"Lawful good",
+            "gender":"male",
+            "age":"10",
+            "furr":"White",
+            "eyes":"Brown",
+            "description":"Jugueton y curioso",
+            "img_href":"https://randomfox.ca/images/54.jpg"
+        },
+        {
+            "id":2,
+            "name":"Jack",
+            "race":"Vulpes vulpes",
+            "nature":"Neutral good",
+            "gender":"male",
+            "age":"8",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Temperamental pero inteligente",
+            "img_href":"https://randomfox.ca/images/10.jpg"
+        },
+        {
+            "id":3,
+            "name":"Steven",
+            "race":"Vulpes abietorum",
+            "nature":"Chaotic good",
+            "gender":"male",
+            "age":"8",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Un poco raro..",
+            "img_href":"https://randomfox.ca/images/20.jpg"
+        },
+        {
+            "id":4,
+            "name":"Gregor",
+            "race":"Vulpes vulpes",
+            "nature":"Lawful neutral",
+            "gender":"male",
+            "age":"11",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Gran peleador",
+            "img_href":"https://randomfox.ca/images/34.jpg"
+        },
+        {
+            "id":5,
+            "name":"Stu",
+            "race":"Vulpes abietorum",
+            "nature":"Neutral",
+            "gender":"male",
+            "age":"6",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"No sabemos quien lo trajo",
+            "img_href":"https://randomfox.ca/images/43.jpg"
+        },
+        {
+            "id":6,
+            "name":"Ela",
+            "race":"Vulpes alascensis",
+            "nature":"Chaotic Neutral",
+            "gender":"female",
+            "age":"2",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Glamorosa, encantador, simplemente Ela",
+            "img_href":"https://randomfox.ca/images/22.jpg"
+        },
+        {
+            "id":7,
+            "name":"Robert",
+            "race":"Vulpes alascensis",
+            "nature":"Lawful evil",
+            "gender":"male",
+            "age":"4",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Un rey que duro poco",
+            "img_href":"https://randomfox.ca/images/14.jpg"
+        },
+        {
+            "id":8,
+            "name":"Jon & Dany",
+            "race":"Vulpes vulpes",
+            "nature":"Neutral evil",
+            "gender":"couple",
+            "age":"7",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Inseperables, esperando un final distinto",
+            "img_href":"https://randomfox.ca/images/28.jpg"
+        },
+        {
+            "id":9,
+            "name":"Rick",
+            "race":"Vulpes martin",
+            "nature":"Chaotic evil",
+            "gender":"male",
+            "age":"6",
+            "furr":"Orange",
+            "eyes":"Brown",
+            "description":"Superdotado, manipula a Morty",
+            "img_href":"https://randomfox.ca/images/92.jpg"
+        }
+    ]
+}
