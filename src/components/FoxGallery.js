@@ -2,6 +2,10 @@ import React from 'react';
 import '../styles/FoxGallery.css'
 
 const FoxGallery = (props) => {
+    /* 
+    Es posible simplificar la logica de este componente haciendolo un componente class
+    Sin embargo me di cuenta luego de haberlo hecho funcionar como componente funcional xD
+    */
     const update = (event, fox) => {
         event.preventDefault();
         props.selectFox(fox);
