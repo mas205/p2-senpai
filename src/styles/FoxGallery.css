@@ -1,0 +1,49 @@
+.aside-navbar {
+    float:left;
+    padding: 3em;
+    width: 20%;
+    position: relative;
+    overflow-y: auto;
+    z-index: 1001;
+    background: white;
+    padding: 0;
+    overflow-x: hidden;
+}
+.aside-navbar > .card {
+    width:100%;
+    border-radius: 0px;
+}
+.heighted {
+    height: 300px;
+    border: 0.5px solid whitesmoke !important; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+}
+.heighted:hover .show{
+    visibility: visible;
+}
+.foxInfo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(46, 45, 45, 0.40);
+    color: white;
+    padding: 4px;
+    font-size: 17px;
+    line-height: 18px;
+    width: inherit;
+    visibility: hidden;
+}
+.foxAdopt {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(46, 45, 45, 0.40);
+    color: white;
+    padding: 4px;
+    font-size: 17px;
+    line-height: 18px;
+    width: inherit;
+    visibility: hidden;
+}
