@@ -4,6 +4,7 @@ import FoxCard from './FoxCard';
 import FoxForm from './FoxForm';
 import FoxBlog from './FoxBlog';
 import NavBar from './NavBar';
+import FoxWishlist from './FoxWishlist'
 import '../styles/App.css';
 import foxConfig from '../foxConfig.json'
 /* 
@@ -62,6 +63,7 @@ export default class App extends React.Component{
         } else if(pageToRender === 'card'){
             return <FoxCard 
                 selectedFox={this.state.selectedFox}
+                favFox={this.favFox}
             />;
         } else if(pageToRender === 'form'){
             return <FoxForm 
@@ -72,6 +74,12 @@ export default class App extends React.Component{
             />;
         } else if(pageToRender === 'blog'){
             return <FoxBlog />;
+        } else if(pageToRender === 'favs'){
+            return <FoxWishlist 
+                foxes={this.state.foxes.filter(fox => fox.is_selected)}
+                selectFox={this.selectFox} 
+                updateSelectedPage={this.updateSelectedPage}
+            />
         };
     }
     // Settea la pagina seleccionada
@@ -111,6 +119,7 @@ export default class App extends React.Component{
     // Añadir nuevo zorro
     addNewFox = (fox) => {
         fox.id = this.state.lastId+1
+        fox.is_selected = false
         this.setState({
             foxes: [...this.state.foxes, fox],
             lastId: fox.id
@@ -122,6 +131,15 @@ export default class App extends React.Component{
     selectFox = (fox) => {
         this.setState({
             selectedFox: fox
+        });
+    }
+
+    // Whishlist zorro
+    favFox = (fox) => {
+        const favFox = fox;
+        favFox.is_selected = !favFox.is_selected;
+        this.setState({
+            foxes: [...this.state.foxes.filter(f => f !== fox), favFox]
         });
     }
 

@@ -15,14 +15,17 @@ const NavBar = (props) => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarColor01">
                     <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                        <a className="nav-link" onClick={(e) => {updateOnClick(e, 'home')}}  href="/">Galleria<span className="sr-only">(current)</span></a>
+                    <li className="nav-item">
+                        <a className="nav-link" onClick={(e) => {updateOnClick(e, 'home')}}  href="/">Galleria</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={(e) => {updateOnClick(e, 'form')}} href="/">Registro</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" onClick={(e) => {updateOnClick(e, 'blog')}} href="/">Blog</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" onClick={(e) => {updateOnClick(e, 'favs')}} href="/">Wishlist</a>
                     </li>
                     </ul>
                     <form className="form-inline">

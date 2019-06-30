@@ -1,10 +1,16 @@
 import React from 'react';
 import '../styles/FoxCard.css'
 
-const FoxCard = ({selectedFox}) => {
+const FoxCard = ({selectedFox, favFox}) => {
     const toBeProgramed = (e) => {
         e.preventDefault();
         alert('To be implemented');
+    }
+    const handelerFavFox = (e, fox) => {
+        e.preventDefault();
+        const discurso = fox.is_selected === false ? 'Añadido a wishlist' : 'Sacado de wishlist';
+        favFox(fox);
+        alert(discurso);
     }
 
     return (
@@ -31,7 +37,7 @@ const FoxCard = ({selectedFox}) => {
                 <br/>
                 <br/>
                 <footer>
-                    <a href="/" className="card-link" onClick={e => toBeProgramed(e)}>Añadir a favoritos</a>
+                    <a href="/" className="card-link" onClick={e => handelerFavFox(e, selectedFox)}>Añadir a favoritos</a>
                     <a href="/" className="card-link" onClick={e => toBeProgramed(e)}>Adoptar</a>
                 </footer>                       
             </div>
